@@ -29,7 +29,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-/*     justify-content: center; */
+    justify-content: center;
     width: 100%;
     height: 72px;
 }
@@ -43,22 +43,18 @@ body {
     box-sizing: border-box;
     border-radius: 5px;
     margin-right: 15px;
+    background-color: #221f1f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px 10px;
+    cursor: pointer;
+    position: relative;
+    font-size: 30px;
+
 }
 
 .header-menu:hover {
     background-color: rgb(62, 62, 62);
-}
-
-.header-menu-nav {
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 3;
-    display: inline-block;
-    padding: 5px 10px 10px;
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
 }
 
 .logo-name {
@@ -81,6 +77,8 @@ body {
 }
 
 .header-catalog {
+    display: flex;
+    align-items: center;
     margin-right: 20px;
 }
 
@@ -102,13 +100,10 @@ body {
 }
 
 .catalog-btn-icon {
-    fill: #f9f4f4;
     width: 24px;
     height: 24px;
     margin-right: 10px;
 }
-
-.button-libel {}
 
 .header-search {
     position: relative;
@@ -122,14 +117,20 @@ body {
     height: 40px;
     cursor: pointer;
     border: none;
-    padding-right: 10px;
     background-color: #fff;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    fill: #8b8b8b;
 }
 
-.serch-from:hover {
+.serch-form-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+}
+
+.serch-form-img:hover {
     fill: rgb(37, 153, 46);
 }
 
@@ -172,16 +173,11 @@ body {
     cursor: pointer;
     border: none;
     text-align: center;
-    padding-right: 10px;
+    padding: 0 20px 0 20px;
+    color: #fff;
     background-color: rgb(37, 153, 46);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-}
-
-.text-grean {
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #fff;
 }
 
 .grean-search:hover {
@@ -189,14 +185,19 @@ body {
 }
 
 .change-langune {
-    margin-left: 20px;
+    margin-left: 15px;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .ru {
+    border: none;
+    background-color: #221f1f;
     color: #8b8b8b;
     cursor: pointer;
+    padding: 5px 5px;
+    font-size: 15px;
 }
 
 .ru:hover {
@@ -206,12 +207,17 @@ body {
 .ru::after {
     content: '';
     border-left: 1px solid #8b8b8b;
-    margin: 0 5px 0 5px;
+    margin: 0 0px 0 5px;
 }
 
 .ua {
+    background-color: #221f1f;
+    border: none;
+    padding: 5px 0px;
     color: #fff;
     cursor: pointer;
+    /*     padding: 0; */
+    font-size: 15px;
 }
 
 .ua:hover {
@@ -252,6 +258,12 @@ body {
     height: 40px;
     border-radius: 5px;
     margin-left: 15px;
+    border: none;
+    background-color: #221f1f;
+}
+.header-user-icon{
+    width: 24px;
+    height: 24px;
 }
 
 .header-user:hover {
@@ -268,8 +280,13 @@ body {
     cursor: pointer;
     border-radius: 5px;
     margin-left: 5px;
+    border: none;
+    background-color: #221f1f;
 }
-
+.header-basket-img{
+    width: 24px;
+    height: 24px;
+}
 .header-basket:hover {
     background-color: rgb(62, 62, 62);
 }
@@ -280,9 +297,30 @@ body {
 
 
 
-    @media screen and (max-width: 768px) {
-        .btn-catalog{
-            display: none;
-        }
-
+@media screen and (max-width: 768px) {
+    .btn-catalog {
+        display: none;
     }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .change-langune {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .text-img-name {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .header-catalog {
+        display: none;
+    }
+
+}

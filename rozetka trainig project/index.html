@@ -11,15 +11,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/main.css" />
+    <meta name="wiewport" content="width=device-width" />
     <title>Rozetka training project</title>
   </head>
   <body>
     <div class="header">
       <div class="layout">
         <div class="header-layout">
-          <div class="header-menu" id="test">
-            <label class="header-menu-nav" for="showmenu">&#9776;</label>
-          </div>
+          <button class="header-menu nav-toggle" for="showmenu">&#9776;</button>
           <a href="http://#" class="logo-name">
             <img
               class="img-logo"
@@ -31,49 +30,21 @@
           </a>
           <div class="header-catalog">
             <button class="btn-catalog">
-              <!--               <img src="./img/catalog-btm-icon.svg" alt="">
-              Каталог -->
-              <span class="catalog-btn-icon">
-                <?xml version="1.0" encoding="UTF-8"?>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  id="Outline"
-                  color="#fff"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                >
-                  <path
-                    d="M7,0H4A4,4,0,0,0,0,4V7a4,4,0,0,0,4,4H7a4,4,0,0,0,4-4V4A4,4,0,0,0,7,0ZM9,7A2,2,0,0,1,7,9H4A2,2,0,0,1,2,7V4A2,2,0,0,1,4,2H7A2,2,0,0,1,9,4Z"
-                  />
-                  <path
-                    d="M20,0H17a4,4,0,0,0-4,4V7a4,4,0,0,0,4,4h3a4,4,0,0,0,4-4V4A4,4,0,0,0,20,0Zm2,7a2,2,0,0,1-2,2H17a2,2,0,0,1-2-2V4a2,2,0,0,1,2-2h3a2,2,0,0,1,2,2Z"
-                  />
-                  <path
-                    d="M7,13H4a4,4,0,0,0-4,4v3a4,4,0,0,0,4,4H7a4,4,0,0,0,4-4V17A4,4,0,0,0,7,13Zm2,7a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V17a2,2,0,0,1,2-2H7a2,2,0,0,1,2,2Z"
-                  />
-                  <path
-                    d="M20,13H17a4,4,0,0,0-4,4v3a4,4,0,0,0,4,4h3a4,4,0,0,0,4-4V17A4,4,0,0,0,20,13Zm2,7a2,2,0,0,1-2,2H17a2,2,0,0,1-2-2V17a2,2,0,0,1,2-2h3a2,2,0,0,1,2,2Z"
-                  />
-                </svg>
-              </span>
-              <span class="button-libel">Каталог </span>
+              <img
+                src="./img/catalog-btm-icon.svg"
+                class="catalog-btn-icon"
+                alt=""
+              />
+              Каталог
             </button>
           </div>
           <div class="header-search">
             <button class="serch-from">
-              <?xml version="1.0" encoding="UTF-8"?>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                id="Outline"
-                viewBox="0 0 24 24"
-                width="15"
-                height="15"
-              >
-                <path
-                  d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z"
-                />
-              </svg>
+              <img
+                src="./img/search-from-img.svg"
+                class="serch-form-img"
+                alt=""
+              />
             </button>
             <input type="text" class="input-search" placeholder="Я ищу..." />
             <button class="search-from-microphone">
@@ -93,62 +64,90 @@
                 />
               </svg>
             </button>
-            <button class="grean-search">
-              <p class="text-grean">Найти</p>
-            </button>
+            <button class="grean-search">Найти</button>
           </div>
           <div class="change-langune">
             <!--            Переробити в button -->
-            <p class="ru">RU</p>
-            <p class="ua">UA</p>
+            <button class="ru">RU</button>
+            <button class="ua">UA</button>
           </div>
           <a href="http://#" class="header-actions" target="_blank">
-            <!--             переробити в span -->
-            <p class="text-actions">ДОПОМОГТИ</p>
-            <p class="text-actions-two">ЗСУ</p>
+            <span class="text-actions">ДОПОМОГТИ</span>
+            <span class="text-actions-two">ЗСУ</span>
           </a>
-          <div class="header-user">
-            <div class="header-user-icon">
-              <?xml version="1.0" encoding="UTF-8"?>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                id="Outline"
-                viewBox="0 0 24 24"
-                width="25"
-                height="25"
-              >
-                <path
-                  d="M12,12A6,6,0,1,0,6,6,6.006,6.006,0,0,0,12,12ZM12,2A4,4,0,1,1,8,6,4,4,0,0,1,12,2Z"
-                />
-                <path
-                  d="M12,14a9.01,9.01,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.01,9.01,0,0,0,12,14Z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div class="header-basket">
-            <!--             зробити buttom і помістити туди img -->
-            <div class="header-basket-img">
-              <?xml version="1.0" encoding="UTF-8"?>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                id="Outline"
-                viewBox="0 0 24 24"
-                width="25"
-                height="25"
-              >
-                <path
-                  d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z"
-                />
-                <circle cx="7" cy="22" r="2" />
-                <circle cx="17" cy="22" r="2" />
-              </svg>
-            </div>
-          </div>
+          <button class="header-user">
+            <img
+              src="./img/header-user-icon.svg"
+              class="header-user-icon"
+              alt=""
+            />
+          </button>
+          <button class="header-basket">
+            <img
+              src="./img/ header-basket-img.svg"
+              class="header-basket-img"
+              alt=""
+            />
+          </button>
         </div>
       </div>
     </div>
 
+    <div class="shadow"></div>
+    <div class="nav">
+      <div class="nav-logo-closed">
+        <a href="http://#" class="nav-logo-name">
+          <img
+            class="img-logo"
+            src="./img/logo/logo_rozetka.svg"
+            alt=""
+            srcset=""
+          />
+          <span class="3.20">CМІЛИВІСТЬ</span>
+        </a>
+
+        <button class="nav-closed nav-toggle">X</button>
+      </div>
+      <div class="user-authorization">
+        <div class="img-log-border">
+          <img src="./img/header-user-icon.svg" class="user-img" alt="" />
+        </div>
+        <div class="login-exit">
+          <div class="login">
+            <a href="#" class="exit-in">Вхід</a>
+            <a href="#" class="entrance-in">Реєстрація</a>
+          </div>
+          <span class="info-login"
+            >Авторизуйтесь для отримання розширених можливостей</span
+          >
+        </div>
+      </div>
+      <a href="#" class="help-zsu">
+        <img src="./img/ua-trizub.svg" alt="" class="img-zsu" />
+        <span class="help-zsu-text">ДОПОМОГТИ ЗСУ</span>
+        <img src="./img/right-btn-zsu.svg" class="img-right-zsu" alt="" />
+      </a>
+      <a href="#" class="nav-product-catalog">
+        <div class="nav-product-img">
+         <img src="./img/nav-catalog-btm-icon.svg" alt="" class="nav-img-zsu" />
+        </div>
+        <span class="nav-zsu-text">Каталог товарів</span>
+      </a>
+      <a href="#" class="nav-basket">
+        <div class="nav-basket-img">
+         <img src="./img/ nav-basket-img .svg" alt="" class="nav-img-basket" />
+        </div>
+        <span class="nav-basket-text">Корзина</span>
+      </a>
+      <a href="#" class="nav-info">
+        <div class="nav-info-img">
+         <img src="./img/nav-info-img.svg" alt="" class="nav-img-info" />
+        </div>
+        <span class="nav-info-text">Довідковий центр</span>
+      </a>
+      <hr class="line">
+    </div>
+    <a></a>
 
     <script src="./js/main.js"></script>
   </body>
