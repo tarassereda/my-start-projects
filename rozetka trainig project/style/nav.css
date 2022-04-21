@@ -8,6 +8,7 @@
     background-color: #fff;
     z-index: 10;
     font-family: 'Ubuntu', sans-serif;
+    overflow: auto;
 }
 
 .nav--open {
@@ -211,7 +212,8 @@
     background-color: rgb(172, 204, 177);
     border-radius: 5px;
 }
-.nav-product-img:hover{
+
+.nav-product-img:hover {
     background-color: rgb(172, 204, 177);
 }
 
@@ -236,7 +238,7 @@
     background-color: rgb(241, 244, 241);
 }
 
-.nav-img-basket{
+.nav-img-basket {
     width: 30%;
     width: 22px;
     height: 32px;
@@ -249,10 +251,11 @@
 }
 
 .nav-basket:hover {
-    background-color: rgb(172, 204, 177);
+    background-color: rgba(132, 188, 141, 0.5);
     border-radius: 5px;
 }
-.nav-basket-img:hover{
+
+.nav-basket-img:hover {
     background-color: rgb(172, 204, 177);
 }
 
@@ -277,7 +280,7 @@
     background-color: rgb(241, 244, 241);
 }
 
-.nav-img-info{
+.nav-img-info {
     width: 30%;
     width: 22px;
     height: 32px;
@@ -293,8 +296,201 @@
     background-color: rgb(172, 204, 177);
     border-radius: 5px;
 }
-.nav-info-img:hover{
-  background-color: rgb(172, 204, 177);
+
+.nav-info-img:hover {
+    background-color: rgb(172, 204, 177);
 }
 
+.nav-langune-city {
+    border-top: 0.5px solid rgb(231, 228, 228);
+    border-bottom: 0.5px solid rgb(231, 228, 228);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
 
+.nav-langune {
+    padding: 15px 10px 20px 10px;
+}
+
+.nav-langune-text {
+    margin-left: 8px;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    color: rgb(96, 95, 95);
+}
+
+.nav-langune-ru {
+    width: 45px;
+    height: 35px;
+    margin-left: 30px;
+    background-color: #fff;
+    border: 1px solid rgb(202, 198, 198);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-langune-ru:hover {
+    border: 1px solid rgb(54, 172, 64);
+}
+
+.nav-langune-ua {
+    width: 45px;
+    height: 35px;
+    margin-left: 5px;
+    background-color: rgb(54, 172, 64, 0.1);
+    border: 1px solid rgb(54, 172, 64);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-city {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px 15px 10px;
+}
+
+.nav-city-text {
+    margin-left: 8px;
+    width: 40px;
+    font-size: 15px;
+    color: rgb(96, 95, 95);
+}
+
+.nav-city-kyiv {
+    cursor: pointer;
+    margin-left: 30px;
+    background-color: #fff;
+    font-size: 15px;
+    border: none;
+}
+
+/* .nav-city-img{
+
+} */
+
+/* .nav-city-kyiv::after {
+    content: '';
+} */
+
+.nav-in-company {
+    margin-left: 10px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-in-company-text {
+    color: rgb(96, 95, 95);
+    padding: 10px 5px 10px 5px;
+
+}
+
+.nav-info-about-us {
+    text-decoration: none;
+    color: #221f1f;
+    padding: 10px 5px 10px 5px;
+
+}
+
+.nav-info-terms-use {
+    text-decoration: none;
+    color: #221f1f;
+    padding: 10px 5px 10px 5px;
+}
+
+.nav-info-contact {
+    position: relative;
+    text-decoration: none;
+    color: #221f1f;
+    padding: 10px 5px 10px 5px;
+}
+
+.nav-info-contact::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 265px;
+    border-bottom: 0.5px solid rgb(231, 228, 228);
+}
+
+.nav-info-about-us:hover {
+    text-decoration: underline;
+}
+
+.nav-info-terms-use:hover {
+    text-decoration: underline;
+}
+
+.nav-info-contact:hover {
+    text-decoration: underline;
+}
+
+.nav-in-help {
+    color: rgb(96, 95, 95);
+    padding: 15px 5px 10px 5px;
+}
+
+.nav-help-deliveri-pay {
+    text-decoration: none;
+    color: #221f1f;
+    padding: 10px 5px 10px 5px;
+}
+
+.nav-help-credit {
+    text-decoration: none;
+    color: #221f1f;
+    padding: 10px 5px 10px 5px;
+}
+
+.nav-help-guarantee {
+    text-decoration: none;
+    color: #221f1f;
+    padding: 10px 5px 10px 5px;
+}
+
+.nav-help-return-goods {
+    text-decoration: none;
+    color: #221f1f;
+    padding: 10px 5px 10px 5px;
+}
+
+.nav-help-service-centers {
+    position: relative;
+    text-decoration: none;
+    color: #221f1f;
+    padding: 10px 5px 10px 5px;
+}
+
+.nav-help-service-centers::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 265px;
+    border-bottom: 0.5px solid rgb(231, 228, 228);
+}
+
+.nav-help-deliveri-pay:hover {
+    text-decoration: underline;
+}
+
+.nav-help-credit:hover {
+    text-decoration: underline;
+}
+
+.nav-help-guarantee:hover {
+    text-decoration: underline;
+}
+
+.nav-help-return-goods:hover {
+    text-decoration: underline;
+}
+
+.nav-help-service-centers:hover {
+    text-decoration: underline;
+}
