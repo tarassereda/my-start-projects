@@ -156,7 +156,6 @@ body {
 
 .search-from-microphone:hover {
     fill: #dc6161;
-
 }
 
 .search-from-microphone::before {
@@ -166,7 +165,6 @@ body {
     border-left: 1px solid rgb(182, 180, 180);
     box-sizing: border-box;
 }
-
 
 .grean-search {
     height: 40px;
@@ -294,8 +292,6 @@ body {
 .header-basket-img {
     fill: #fff;
 }
-
-
 
 @media screen and (max-width: 768px) {
     .btn-catalog {
