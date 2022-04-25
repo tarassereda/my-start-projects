@@ -20,12 +20,11 @@ for (const catalog of catalogs) {
 let closeBtn = document.querySelector(".closed-catalog");
 
 closeBtn.addEventListener('click', () =>{
-/*   document.querySelector(".product-catalog--open").classList.toggle("product-catalog");
-  document.querySelector(".shadow--open").classList.toggle("shadow"); */
-
-  document.querySelector(".product-catalog--open").classList.remove("product-catalog");
-  document.querySelector(".shadow--open").classList.remove("shadow");
+  document.querySelector(".product-catalog--open").classList.toggle("product-catalog");
+  document.querySelector(".shadow--open").classList.toggle("shadow");
 
   console.log('sdf');
 })
+
+
 
