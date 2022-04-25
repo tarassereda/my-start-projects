@@ -1,4 +1,6 @@
 const buttons = document.querySelectorAll(".nav-toggle");
+const btnCatalog = document.querySelector('.btn-catalog');
+const btnCatalogClose = document.querySelector('.closed-catalog');
 
 for (const button of buttons) {
   button.addEventListener("click", function (event) {
@@ -6,25 +8,23 @@ for (const button of buttons) {
     document.querySelector(".nav").classList.toggle("nav--open");
   });
 }
+btnCatalog.addEventListener('click', () => {
+  document.querySelector(".shadow").classList.add("shadow--open");
+  document.querySelector('.product-catalog').classList.add('product-catalog--open');
+});
+btnCatalogClose.addEventListener('click', ()=>{
+  document.querySelector(".shadow").classList.remove("shadow--open");
+  document.querySelector('.product-catalog').classList.remove('product-catalog--open');
+  
+});
 
-const catalogs = document.querySelectorAll(".btn-catalog");
+document.querySelector(".shadow").addEventListener('click', ()=>{
+  document.querySelector(".shadow").classList.remove("shadow--open");
+  document.querySelector('.product-catalog').classList.remove('product-catalog--open');
+  document.querySelector(".nav").classList.remove("nav--open");
+});
 
-for (const catalog of catalogs) {
-  catalog.addEventListener("click", function (event) {
-    document.querySelector(".product-catalog").classList.toggle("product-catalog--open");
-    document.querySelector(".shadow").classList.toggle("shadow--open");
- 
-  });
-}
 
-let closeBtn = document.querySelector(".closed-catalog");
-
-closeBtn.addEventListener('click', () =>{
-  document.querySelector(".product-catalog--open").classList.toggle("product-catalog");
-  document.querySelector(".shadow--open").classList.toggle("shadow");
-
-  console.log('sdf');
-})
 
 
 

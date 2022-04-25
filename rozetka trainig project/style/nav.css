@@ -1,5 +1,5 @@
 .nav {
-    display: none;
+    display: block;
     position: fixed;
     top: 0;
     left: -300px;
@@ -7,14 +7,13 @@
     height: 100vh;
     background-color: #fff;
     z-index: 10;
+    transition: 0.3s;
     font-family: 'Ubuntu', sans-serif;
     overflow: auto;    
 }
 
 .nav--open {
-    display: block;
     left: 0;
-    transition-property: all;
 }
 
 .shadow {
@@ -27,6 +26,7 @@
     left: 0;
     background-color: rgb(0, 0, 0);
     opacity: .3;
+    cursor: pointer;
 }
 
 .shadow--open {
@@ -212,8 +212,9 @@
     border-radius: 5px;
 }
 
-.nav-product-img:hover {
+.nav-product-catalog:hover .nav-product-img{
     background-color: rgb(172, 204, 177);
+    border-radius: 5px;
 }
 
 .nav-basket {
@@ -249,14 +250,18 @@
     color: rgb(0, 0, 0);
 }
 
+.nav-basket:hover .nav-basket-img {
+    background-color: rgb(172, 204, 177);
+    border-radius: 5px;
+}
 .nav-basket:hover {
-    background-color: rgba(132, 188, 141, 0.5);
+    background-color: rgb(172, 204, 177);
     border-radius: 5px;
 }
 
-.nav-basket-img:hover {
+/* .nav-basket-img:hover {
     background-color: rgb(172, 204, 177);
-}
+} */
 
 .nav-info {
     display: flex;
@@ -295,10 +300,14 @@
     background-color: rgb(172, 204, 177);
     border-radius: 5px;
 }
-
-.nav-info-img:hover {
+.nav-info:hover .nav-info-img {
     background-color: rgb(172, 204, 177);
+    border-radius: 5px;
 }
+
+/* .nav-info-img:hover {
+    background-color: rgb(172, 204, 177);
+} */
 
 .nav-langune-city {
     border-top: 0.5px solid rgb(231, 228, 228);
