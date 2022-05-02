@@ -1,6 +1,6 @@
 const buttons = document.querySelectorAll(".nav-toggle");
-const btnCatalog = document.querySelector('.btn-catalog');
-const btnCatalogClose = document.querySelector('.closed-catalog');
+const btnCatalog = document.querySelector(".btn-catalog");
+const btnCatalogClose = document.querySelector(".closed-catalog");
 
 for (const button of buttons) {
   button.addEventListener("click", function (event) {
@@ -8,23 +8,26 @@ for (const button of buttons) {
     document.querySelector(".nav").classList.toggle("nav--open");
   });
 }
-btnCatalog.addEventListener('click', () => {
+btnCatalog.addEventListener("click", () => {
   document.querySelector(".shadow").classList.add("shadow--open");
-  document.querySelector('.product-catalog').classList.add('product-catalog--open');
+  document
+    .querySelector(".product-catalog")
+    .classList.add("product-catalog--open");
 });
-btnCatalogClose.addEventListener('click', ()=>{
+btnCatalogClose.addEventListener("click", () => {
   document.querySelector(".shadow").classList.remove("shadow--open");
-  document.querySelector('.product-catalog').classList.remove('product-catalog--open');
-  
+  document
+    .querySelector(".product-catalog")
+    .classList.remove("product-catalog--open");
 });
 
-document.querySelector(".shadow").addEventListener('click', ()=>{
+document.querySelector(".shadow").addEventListener("click", () => {
   document.querySelector(".shadow").classList.remove("shadow--open");
-  document.querySelector('.product-catalog').classList.remove('product-catalog--open');
+  document
+    .querySelector(".product-catalog")
+    .classList.remove("product-catalog--open");
   document.querySelector(".nav").classList.remove("nav--open");
 });
-
-
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -71,66 +74,64 @@ let timer = setInterval(function () {
 
 
 
+const btns = document.querySelectorAll(".btn__title");
 
-/* const titleBtnOn = document.querySelector('.btn__title__empty');
-const titleBtnOf = document.querySelector('.btn__title__full');
-
-titleBtnOn.addEventListener("click", () => {
-  titleBtnOn.classList.add("btn__title__empty__of");
-  titleBtnOf.classList.add("btn__title__full__one");
-  console.log("on");
-});
-
-titleBtnOf.addEventListener("click", () => {
-  titleBtnOn.classList.remove("btn__title__empty__of");
-  titleBtnOf.classList.remove("btn__title__full__one");
-  console.log("of");
-}); */
-
-
-
-var btns = document.querySelectorAll('.btn__title')
-
-const titleBtnOn = document.querySelector('.btn__title__empty');
-const titleBtnOf = document.querySelector('.btn__title__full');
-
-
-
-
-btns.forEach(function(btn) {
-
-  btn.addEventListener('click', function(event) {
-    console.log(event.target.classList);
-
-  })
-
-})
-
-
-
-
-titleBtnOn.addEventListener("click", () => {
-  titleBtnOn.classList.add("btn__title__empty__of");
-  titleBtnOf.classList.add("btn__title__full__one"); 
-
-  console.log("on");
-});
-
-titleBtnOf.addEventListener("click", () => {
-  titleBtnOn.classList.remove("btn__title__empty__of");
-  titleBtnOf.classList.remove("btn__title__full__one");
-  console.log("of");
+btns.forEach(function (btn) {
+  btn.addEventListener("click", function (event) {
+    btn.classList.toggle("btn__title_active");
+  });
 });
 
 
 
 
-/*   if (titleBtnOn) {
-    titleBtnOn.classList.add("btn__title__empty__of");
-    titleBtnOf.classList.add("btn__title__full__one");
-    console.log("on");
-    
-  } else if (titleBtnOf)
-  titleBtnOn.classList.remove("btn__title__empty__of");
-  titleBtnOf.classList.remove("btn__title__full__one");
-  console.log("of"); */
+
+
+const products = [
+  {
+    id: 0 ,
+    name: 'пшенична мука',
+    img: './',
+    oldPrice: 1,
+    curentPrice: 12,
+    description: ' my tovar info'
+  },
+  {
+    id: 0 ,
+    name: 'пшенична мука',
+    img: './',
+    oldPrice: 1,
+    curentPrice: 12,
+    description: ' my tovar info'
+  },
+  {
+    id: 0 ,
+    name: 'пшенична мука',
+    img: './',
+    oldPrice: 1,
+    curentPrice: 12,
+    description: ' my tovar info'
+  },
+  {
+    id: 0 ,
+    name: 'пшенична мука',
+    img: './',
+    oldPrice: 1,
+    curentPrice: 12,
+    description: ' my tovar info'
+  },
+  {
+    id: 0 ,
+    name: 'пшенична мука',
+    img: './',
+    oldPrice: 1,
+    curentPrice: 12,
+    description: ' my tovar info'
+  },
+]
+
+
+
+
+
+

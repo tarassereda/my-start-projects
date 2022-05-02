@@ -76,8 +76,6 @@
 }
 
 
-
-
 .btn__title {
     display: flex;
     justify-content: center;
@@ -99,18 +97,22 @@
     background-color: rgba(164, 232, 209, 0.2);
 }
 
+
+
+.btn__title_active .btn__title__empty{
+    display: none;
+}
+.btn__title_active .btn__title__full{
+    display: block;
+}
+
+
+
 .btn__title__empty {
     display: block;
 }
 
-.btn__title__empty__of {
-    display: none;
-}
 
 .btn__title__full {
     display: none;
-}
-.btn__title__full__one {
-    display: block;
-
 }
