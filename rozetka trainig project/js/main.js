@@ -97,7 +97,7 @@ const products = [
     description: 'Ігровий ноутбук'
   },
   {
-    id: 0 ,
+    id: 1 ,
     name: 'Ноутбук Acer Aspire 7 A715-42g-ROVS',
     img: 'rozetka trainig project/img/new-goods/tov-2.jpeg',
     oldPrice: 27999,
@@ -105,7 +105,7 @@ const products = [
     description: 'Робочий ноутбук'
   },
   {
-    id: 0 ,
+    id: 2 ,
     name: 'Ноутбук ASUS TUF Gaming F15 FX506LH-HN042 ',
     img: 'rozetka trainig project/img/new-goods/tov-3.jpeg',
     oldPrice: 35999,
@@ -113,7 +113,7 @@ const products = [
     description: 'Ігровий ноутбук'
   },
   {
-    id: 0 ,
+    id: 3 ,
     name: 'Ноутбук ASUS ExpertBook BA1500CDA-BQ0485 15.6" IPS',
     img: 'rozetka trainig project/img/new-goods/tov-4.jpeg',
     oldPrice: 17999,
@@ -121,7 +121,7 @@ const products = [
     description: 'Робочий ноутбук'
   },
   {
-    id: 0 ,
+    id: 4 ,
     name: 'Ноутбук ASUS TUF Gaming F15 FX506HM-HN232',
     img: 'rozetka trainig project/img/new-goods/tov-5.jpeg',
     oldPrice: 46999,
@@ -129,7 +129,7 @@ const products = [
     description: 'Ігровий ноутбук'
   },
   {
-    id: 0 ,
+    id: 5 ,
     name: 'Ноутбук Acer Aspire 7 A715-42G-R0VS (NH.QBFEU.00A)',
     img: 'rozetka trainig project/img/new-goods/tov-6.jpeg',
     oldPrice: 27999,
@@ -137,7 +137,7 @@ const products = [
     description: 'Робочий ноутбук'
   },
   {
-    id: 0 ,
+    id: 6 ,
     name: 'Ноутбук Pixus Rise Grey',
     img: 'rozetka trainig project/img/new-goods/tov-7.jpeg',
     oldPrice: 7999,
@@ -145,7 +145,7 @@ const products = [
     description: 'Робочий ноутбук'
   },
   {
-    id: 0 ,
+    id: 7 ,
     name: 'Ноутбук Acer Swift 1 SF114-34-P1A1 (NX.A77EU.00V)',
     img: 'rozetka trainig project/img/new-goods/tov-8.jpeg',
     oldPrice: 15999,

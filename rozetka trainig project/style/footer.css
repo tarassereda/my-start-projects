@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+/*     flex-direction: row; */
     flex-wrap: wrap;
     background-color: rgb(48, 150, 42);
     margin-top: 50px;
@@ -16,15 +16,29 @@
 }
 
 .tetx-footer {
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
-    padding: 10px 0 10px 0;
+    padding: 10px 0px 10px 0px;
     color: rgb(255, 255, 255);
     font-size: 20px;
+
 }
 
 .footer__apps {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
+padding: 0;
+margin-right: 10%;
+
+}
+
+@media screen and (max-width: 610px) {
+    .footer__apps  {
+        margin-right: 0;
+    }
+
 }
 
 .footer__apps__btn {
@@ -64,17 +78,25 @@
 .footer__info {
     padding: 16px 16px 24px 16px;
     display: flex;
-    flex-direction: row;
+/* flex-wrap: wrap; */
     border-bottom: 1px solid rgb(182, 179, 179);
 }
+@media screen and (max-width: 791px) {
+    .footer__info {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
 
 .footer__call__social {
-    width: 30%;
+    width: 230px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     margin-right: 20px;
-    flex-wrap: wrap;
 }
 
 .footer__call {
@@ -105,38 +127,20 @@
 }
 .footer__social{
     display: flex;
+    margin-bottom: 30px;
 }
 
-.footer__social__item__fb:hover{
-    animation: 2s linear 1s normal none infinite running rot;
-    -webkit-animation: 1.5s linear 0s normal none infinite running rot;
-}
 
-@keyframes rot {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  @-webkit-keyframes rot {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
 /* Нижня частина */
 
 
 .footer__info__company {
-    width: 70%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     box-sizing: border-box;
 }
+
 
 .footer__info__company__text {
     font-size: 12px;
