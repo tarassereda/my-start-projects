@@ -1,42 +1,41 @@
-.goods_card{
+.goods_card {
     display: flex;
-        flex-wrap: wrap; 
-        justify-content: center;
-        align-items: center;
-        margin-top: 70px;
-        margin-bottom: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-family: 'Ubuntu', sans-serif;
 }
-.goods{
+
+/* .goods{
     display: flex;
     justify-content: start;
-
         margin: 0;
-        padding: 16px;
         border: 0;
         font-size: 100%;
         font: inherit;
         vertical-align: baseline;
-        border-bottom: 1px solid rgb(218, 214, 214);
-        border-right: 1px solid rgb(218, 214, 214);
-        font-family: 'Ubuntu', sans-serif;
-}
-.goods_inner{
+} */
+
+.goods_inner {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 0;
+    padding: 16px;
     border: 0;
     width: 190px;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    border-bottom: 1px solid rgb(218, 214, 214);
+    border-right: 1px solid rgb(218, 214, 214);
 }
-.goods_btn{
+
+.goods_btn {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-
     width: 32px;
     height: 32px;
     margin-bottom: 4px;
@@ -47,38 +46,68 @@
     cursor: pointer;
     margin-left: 160px;
 }
-.unlike{
-    display: block;
+
+.goods_btn:hover {
+    border-radius: 5px;
+    background-color: rgba(164, 232, 209, 0.2);
 }
-.like{
+
+.goods_btn_active .unlike {
     display: none;
 }
-.goods_img{
+
+.goods_btn_active .like {
+    display: block;
+}
+
+.unlike {
+    display: block;
+}
+
+.like {
+    display: none;
+}
+
+
+.goods_img {
     position: relative;
     display: block;
     margin-bottom: 16px;
     text-align: center;
 }
-.goods_img_picture{
+
+.goods_img_picture {
     height: 100px;
     width: 140px;
 }
-.goods_title{
+
+.goods_title {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 15px;
-    /*     font: inherit; */
     vertical-align: baseline;
     text-decoration: none;
     box-sizing: border-box;
-    color: rgb(29, 28, 28);
+    color: rgb(74, 74, 74);
 }
-.googs_price_na{
+.goods_title:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.googs_price_na {
+    color: darkgrey;
     margin: 16px 0px 16px 0px;
     font-size: 12px;
     text-decoration: line-through;
 }
-.goods_price_actual{
+
+.goods_price_actual {
     color: red;
+}
+
+.goods_discription{
+    color: rgb(49, 105, 27);
+    margin: 16px 0px 5px 0px;
 }

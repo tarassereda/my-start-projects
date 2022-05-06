@@ -31,9 +31,6 @@ document.querySelector(".shadow").addEventListener("click", () => {
 
 
 
-
-
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -73,21 +70,6 @@ let timer = setInterval(function () {
   slideIndex++;
   showSlides(slideIndex);
 }, 3000);
-
-
-
-
-
-
-const btns = document.querySelectorAll(".btn__title");
-
-btns.forEach(function (btn) {
-  btn.addEventListener("click", function (event) {
-    btn.classList.toggle("btn__title_active");
-  });
-});
-
-
 
 
 
@@ -160,23 +142,6 @@ const products = [
 
 ];
 
-
-/* for ( let a in products){
-  const imgElem = products[a].Image;
-  const goodsname = products[a].name;
-  const priceNa = products[a].oldPrice;
-  const priceActual = products[a].curentPrice;
-
-  let picture = document.querySelector('.goods_img_picture').innerHTML = imgElem;
-  let goodsTitle = document.querySelector('.goods_title').innerHTML = goodsname;
-  let googsNa = document.querySelector('.googs_price_na').innerHTML = priceNa + ' грн.';
-  let price = document.querySelector('.goods_price_actual').innerHTML = priceActual + ' грн.';
-
-  console.log(a);
-} */
-
-
-
 const template = document.querySelector('.goods');
 const productTemplate = document.querySelector('.goods_inner');
 const productContainer = document.querySelector('.goods_card')
@@ -187,8 +152,9 @@ getData().forEach(item => {
   const productElem = document.importNode(productTemplate, true);
   productElem.querySelector('.goods_img_picture').src = item.image;
   productElem.querySelector('.goods_title').textContent = item.name;
-  productElem.querySelector('.googs_price_na').textContent = item.oldPrice;
-  productElem.querySelector('.goods_price_actual').textContent = item.curentPrice;
+  productElem.querySelector('.googs_price_na').textContent = item.oldPrice + ' грн.';
+  productElem.querySelector('.goods_price_actual').textContent = item.curentPrice + ' грн.';
+  productElem.querySelector('.goods_discription').textContent = item.description;
   productContainer.appendChild(productElem);
 
 });
@@ -198,40 +164,16 @@ function getData() {
 }
 
 
+const btns = document.querySelectorAll(".goods_btn");
+console.log(btns);
+
+btns.forEach(function (btn) {
+  btn.addEventListener("click", function (event) {
+    btn.classList.toggle("goods_btn_active");
+    console.log(btn);
+  });
+});
+ 
 
 
 
-
-
-/* 
-const addBtn = document.querySelector(".add-btn");
-
-function goods(products) {
-  for (let i = 0; i < products.length; i++) {
-    let id = (identificator = products[i].id);
-    console.log(id);
-
-    if (id === 0) {
-      const imgElem = products[i].image;
-      const goodsname = products[i].name;
-      const priceNa = products[i].oldPrice;
-      const priceActual = products[i].curentPrice;
-
-
-      let picture = (document.querySelector(".goods_img_picture").src =
-        imgElem);
-      let goodsTitle = (document.querySelector(".goods_title").innerHTML =
-        goodsname);
-      let googsNa = (document.querySelector(".googs_price_na").innerHTML =
-        priceNa + " грн.");
-      let price = (document.querySelector(".goods_price_actual").innerHTML =
-        priceActual + " грн.");
-    }
-  }
-}
-
-goods(products); */
-
-/* addBtn.addEventListener('click', () => {
-  goods(products)
-}) */
