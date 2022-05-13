@@ -29,6 +29,9 @@ document.querySelector(".shadow").addEventListener("click", () => {
   document.querySelector(".nav").classList.remove("nav--open");
 });
 
+
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -68,6 +71,9 @@ let timer = setInterval(function () {
   slideIndex++;
   showSlides(slideIndex);
 }, 3000);
+
+
+
 
 const products = [
   {
@@ -159,6 +165,8 @@ function getData() {
   return products;
 }
 
+
+
 const btns = document.querySelectorAll(".goods_btn");
 console.log(btns);
 
@@ -168,6 +176,7 @@ btns.forEach(function (btn) {
     console.log(btn);
   });
 });
+
 
 
 
@@ -228,6 +237,7 @@ catalogGetData().forEach((items) => {
 function catalogGetData() {
   return productsCatalog;
 }
+
 
 
 const catalogBtns = document.querySelectorAll(".catalog_g_btn");

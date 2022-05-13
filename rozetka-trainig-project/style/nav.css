@@ -260,10 +260,6 @@
     border-radius: 5px;
 }
 
-/* .nav-basket-img:hover {
-    background-color: rgb(172, 204, 177);
-} */
-
 .nav-info {
     display: flex;
     text-decoration: none;
@@ -306,10 +302,6 @@
     background-color: rgb(172, 204, 177);
     border-radius: 5px;
 }
-
-/* .nav-info-img:hover {
-    background-color: rgb(172, 204, 177);
-} */
 
 .nav-langune-city {
     border-top: 0.5px solid rgb(231, 228, 228);
@@ -378,14 +370,6 @@
     border: none;
 }
 
-/* .nav-city-img{
-
-} */
-
-/* .nav-city-kyiv::after {
-    content: '';
-} */
-
 .nav-in-company {
     margin-left: 10px;
     font-size: 15px;
@@ -396,14 +380,12 @@
 .nav-in-company-text {
     color: rgb(96, 95, 95);
     padding: 10px 5px 10px 5px;
-
 }
 
 .nav-info-about-us {
     text-decoration: none;
     color: #221f1f;
     padding: 10px 5px 10px 5px;
-
 }
 
 .nav-info-terms-use {
@@ -511,9 +493,7 @@
     padding: 20px 15px;
 }
 
-.social-elem-facebook {}
-
-.social-elem-facebook:hover{
+.social-elem-facebook:hover {
     display: inline-block;
     font-size: 1px;
     color: white;
@@ -524,7 +504,8 @@
 .social-elem-twitter {
     margin-left: 15px;
 }
-.social-elem-twitter:hover{
+
+.social-elem-twitter:hover {
     display: inline-block;
     font-size: 1px;
     color: white;
@@ -535,7 +516,8 @@
 .social-elem-youtube {
     margin-left: 15px;
 }
-.social-elem-youtube:hover{
+
+.social-elem-youtube:hover {
     display: inline-block;
     font-size: 1px;
     color: white;
@@ -546,7 +528,8 @@
 .social-elem-instagram {
     margin-left: 15px;
 }
-.social-elem-instagram:hover{
+
+.social-elem-instagram:hover {
     display: inline-block;
     font-size: 1px;
     color: white;
@@ -557,7 +540,8 @@
 .social-elem-viber {
     margin-left: 15px;
 }
-.social-elem-viber:hover{
+
+.social-elem-viber:hover {
     display: inline-block;
     font-size: 1px;
     color: white;
@@ -568,7 +552,8 @@
 .social-elem-telegram {
     margin-left: 15px;
 }
-.social-elem-telegram:hover{
+
+.social-elem-telegram:hover {
     display: inline-block;
     font-size: 1px;
     color: white;

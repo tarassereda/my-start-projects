@@ -50,7 +50,6 @@ body {
     cursor: pointer;
     position: relative;
     font-size: 30px;
-
 }
 
 .header-menu:hover {
@@ -214,7 +213,6 @@ body {
     padding: 5px 0px;
     color: #fff;
     cursor: pointer;
-    /*     padding: 0; */
     font-size: 15px;
 }
 
@@ -259,7 +257,8 @@ body {
     border: none;
     background-color: #221f1f;
 }
-.header-user-icon{
+
+.header-user-icon {
     width: 24px;
     height: 24px;
 }
@@ -281,10 +280,12 @@ body {
     border: none;
     background-color: #221f1f;
 }
-.header-basket-img{
+
+.header-basket-img {
     width: 24px;
     height: 24px;
 }
+
 .header-basket:hover {
     background-color: rgb(62, 62, 62);
 }
@@ -323,7 +324,7 @@ body {
 
 
 @media screen and (max-width: 768px) {
-    .header-actions  {
+    .header-actions {
         display: none;
     }
 

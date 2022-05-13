@@ -22,14 +22,14 @@
 }
 
 @media screen and (max-width: 716px) {
-    .goods_inner  {
+    .goods_inner {
         display: flex;
         width: 43%;
     }
 }
 
 @media screen and (max-width: 518px) {
-    .goods_inner  {
+    .goods_inner {
         display: flex;
         width: 100%;
     }
@@ -78,7 +78,6 @@
 .like {
     display: none;
 }
-
 
 .goods_img {
     position: relative;

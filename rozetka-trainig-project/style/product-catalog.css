@@ -1,7 +1,6 @@
 .product-catalog {
     display: none;
     width: 80%;
-/*     height: 300px; */
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     z-index: 10;
@@ -9,7 +8,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-     transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
 }
 
 .product-catalog--open {
@@ -31,12 +30,6 @@
     right: 10px;
 }
 
-
-
-
-
-
-
 .catalog_g_card {
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +43,7 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 16px; 
+    padding: 16px;
     border: 0;
     width: 190px;
     font-size: 100%;
@@ -61,14 +54,14 @@
 }
 
 @media screen and (max-width: 716px) {
-    .catalog_g_inner  {
+    .catalog_g_inner {
         display: flex;
         width: 43%;
     }
 }
 
 @media screen and (max-width: 518px) {
-    .catalog_g_inner  {
+    .catalog_g_inner {
         display: flex;
         width: 100%;
     }
