@@ -30,7 +30,10 @@
     border-bottom: 1px solid rgb(218, 214, 214);
     border-right: 1px solid rgb(218, 214, 214);
 }
-
+.goods_btn_container{
+display: flex;
+position: relative;
+}
 .goods_btn {
     display: flex;
     justify-content: center;
@@ -44,7 +47,10 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 160px;
+/*     margin-left: 160px; */
+position: absolute;
+top: 0;
+right: 0;
 }
 
 .goods_btn:hover {
@@ -74,6 +80,7 @@
     display: block;
     margin-bottom: 16px;
     text-align: center;
+    margin-top: 35px;
 }
 
 .goods_img_picture {
