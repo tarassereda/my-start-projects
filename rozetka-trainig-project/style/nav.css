@@ -517,7 +517,7 @@
     display: inline-block;
     font-size: 1px;
     color: white;
-    transition: 5s;
+    transition: 2s;
     transform: rotate(360deg);
 }
 
@@ -528,7 +528,7 @@
     display: inline-block;
     font-size: 1px;
     color: white;
-    transition: 5s;
+    transition: 2s;
     transform: rotate(360deg);
 }
 
@@ -539,7 +539,7 @@
     display: inline-block;
     font-size: 1px;
     color: white;
-    transition: 5s;
+    transition: 2s;
     transform: rotate(360deg);
 }
 
@@ -550,7 +550,7 @@
     display: inline-block;
     font-size: 1px;
     color: white;
-    transition: 5s;
+    transition: 2s;
     transform: rotate(360deg);
 }
 
@@ -561,7 +561,7 @@
     display: inline-block;
     font-size: 1px;
     color: white;
-    transition: 5s;
+    transition: 2s;
     transform: rotate(360deg);
 }
 
@@ -572,16 +572,6 @@
     display: inline-block;
     font-size: 1px;
     color: white;
-    transition: 5s;
+    transition: 2s;
     transform: rotate(360deg);
 }
-
-/* @keyframes roll {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
- */
