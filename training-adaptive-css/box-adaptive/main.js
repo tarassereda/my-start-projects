@@ -40,3 +40,24 @@ getData().forEach(item => {
 function getData () {
   return products
 }
+
+
+
+
+
+
+const arr = ['hello', 4188, {name: 'Taras'}, 99, 'BMW'];
+
+
+function btn1 () {
+  document.getElementById('inp1').value;
+  for (let i = 0; i < arr.length; i++) {
+    let summ = '';
+  summ.push(arr[i])
+  console.log(arr[i]);
+    
+  }
+
+
+}
+
