@@ -94,3 +94,40 @@ margin-bottom: 16px;
 .discription{
 
 }
+
+
+
+
+.slider{
+    width: 300px;
+    height: 200px;
+    border: 2px solid red;
+    margin: 50px auto;
+    overflow: hidden;
+  }
+
+
+.polosa{
+/*     background-color: aquamarine; */
+    position: relative;
+    width: 1500px;
+    left: 0;
+    transition: all ease 1s;
+
+}
+
+.polosa .slider_img{
+    float: left;
+}
+
+.polosa::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+.slider_img{
+    width: 300px;
+    height: 200px;
+}
