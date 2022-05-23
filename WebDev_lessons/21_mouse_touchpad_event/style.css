@@ -1,0 +1,13 @@
+#one{
+    width: 100px;
+    height: 100px;
+    background: orange;
+    margin: 20px;
+}
+
+.two{
+    width: 100px;
+    height: 100px;
+    background: rgb(86, 199, 171);
+    margin: 20px;
+}
