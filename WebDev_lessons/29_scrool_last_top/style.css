@@ -1,0 +1,12 @@
+.test{
+    width: 300px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+.top{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
