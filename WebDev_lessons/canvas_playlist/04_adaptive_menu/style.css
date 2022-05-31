@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    left: -280px;
+    top: 0;
+    background: orangered;
+    transition: all ease 1s;
+}
+
+.title_menu {
+    text-align: center;
+    margin: 10px;
+    color: azure;
+    padding: 5px;
+}
+
+.menu_ul {
+    list-style: none;
+
+}
+
+.li_menu {
+    width: 200px;
+    height: 20px;
+    margin: 20px 0;
+    background: azure;
+    color: blueviolet;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.li_menu:hover {
+    background-color: rgb(227, 242, 242);
+}
