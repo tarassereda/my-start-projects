@@ -146,10 +146,11 @@ const template = document.querySelector(".goods");
 const productTemplate = document.querySelector(".goods_inner");
 const productContainer = document.querySelector(".goods_card");
 
-template.remove();
 
-getData().forEach((item) => {
-  const productElem = document.importNode(productTemplate, true);
+template.remove();
+let productElem ;
+getData().forEach((item,i) => {
+   productElem = document.importNode(productTemplate, true);
   productElem.querySelector(".goods_img_picture").src = item.image;
   productElem.querySelector(".goods_title").textContent = item.name;
   productElem.querySelector(".googs_price_na").textContent =
@@ -159,6 +160,8 @@ getData().forEach((item) => {
   productElem.querySelector(".goods_discription").textContent =
     item.description;
   productContainer.appendChild(productElem);
+  //console.log(i);
+
 });
 
 function getData() {
@@ -166,16 +169,59 @@ function getData() {
 }
 
 
-
 const btns = document.querySelectorAll(".goods_btn");
-console.log(btns);
-
 btns.forEach(function (btn) {
   btn.addEventListener("click", function (event) {
     btn.classList.toggle("goods_btn_active");
     console.log(btn);
   });
 });
+
+
+
+
+
+
+
+const btnDelete = document.querySelectorAll(".btn_inner_delete");
+
+btnDelete.forEach(function (btnD,i) {
+
+  btnD.addEventListener("click", function () {
+    console.log(i);
+    console.log(products[i]);
+
+    console.log(getData()[i]);
+    delete getData[i]
+    
+
+   
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -241,7 +287,7 @@ function catalogGetData() {
 
 
 const catalogBtns = document.querySelectorAll(".catalog_g_btn");
-console.log(btns);
+//console.log(btns);
 
 catalogBtns.forEach(function (btn) {
   btn.addEventListener("click", function (event) {
