@@ -1,0 +1,11 @@
+.green{
+    background: rgb(63, 194, 63);
+    color: aliceblue;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.green:hover{
+    background: rgb(99, 201, 99);
+}
