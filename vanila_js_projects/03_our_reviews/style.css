@@ -2,7 +2,7 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    background: hsl(210, 36%, 96%);;
+    background: hsl(210, 36%, 96%);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -96,6 +96,7 @@
     font-size: 1rem;
     letter-spacing: 0.25rem;
     background-color: white;
+    text-transform: capitalize;
 }
 
 
@@ -106,6 +107,7 @@
     font-size: 15px;
     margin-bottom: 10px;
     background-color: white;
+    text-transform: uppercase;
 }
 
 .info {
@@ -113,6 +115,7 @@
     background-color: white;
     color: rgb(74, 84, 103);
     letter-spacing: 1.5px;
+    height: 80px;
 }
 
 .button_container {
@@ -125,26 +128,29 @@
     border: none;
     background-color: white;
 }
-.left_svg{
+
+.left_svg {
+    cursor: pointer;
+    background-color: white;
+    fill: hsl(205, 78%, 60%);
+}
+
+
+.next_btn {
+    margin: 0 8px;
+    border: none;
+    background-color: white;
+}
+
+.right_svg {
     cursor: pointer;
     background-color: white;
 }
 
-
-.prev_btn {
-    margin: 0 8px;
+.right_svg:hover {
+    fill: red;
+    transition: 0.8s
 }
-.right_svg{
-cursor: pointer;
-background-color: white;
-
-}
-
-.right_svg:hover{
-    content: '';
-    fill: rgb(200, 139, 25);
-}
-
 
 .random_btn {
     margin-top: 0.5rem;
@@ -153,11 +159,12 @@ background-color: white;
     padding: 0.25rem 0.5rem;
     text-transform: capitalize;
     border-radius: 0.5rem;
-    transition: all 0.3s linear;;
+    transition: all 0.3s linear;
     border-color: hsl(205, 78%, 60%);
     cursor: pointer;
 }
-.random_btn:hover{
+
+.random_btn:hover {
     background: hsl(205, 78%, 60%);
     color: white;
 }
