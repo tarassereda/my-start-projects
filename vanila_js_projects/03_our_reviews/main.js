@@ -40,42 +40,48 @@ const prewBtn = document.querySelector(".prev_btn");
 const nextBtn = document.querySelector(".next_btn");
 const randomBtn = document.querySelector(".random_btn");
 
-let currentItem = 0;
+// номенр елементу в масиві
+let curentItem = 0;
 
-window.addEventListener("DOMContentLoaded", function () {
-  let item = reviews[currentItem];
-  img.src = item.img;
+// при завантаєенні сторінки завантажуєтс яз масива 1 юзер
+window.addEventListener("DOMContentLoaded", function (params) {
+  let item = reviews[curentItem];
   author.textContent = item.name;
   job.textContent = item.job;
   info.textContent = item.text;
+  img.src = item.img;
 });
 
-function showPerson(person) {
-  const item = reviews[person];
-  img.src = item.img;
+// перебираєм всі остальні елементи з масива
+function usReviews(person) {
+  let item = reviews[curentItem];
   author.textContent = item.name;
   job.textContent = item.job;
   info.textContent = item.text;
-}
+  img.src = item.img;
+};
 
-nextBtn.addEventListener("click", () => {
-  currentItem++;
-  if (currentItem > reviews.length - 1) {
-    currentItem = 0;
+//кнопка наступного елементу
+nextBtn.addEventListener("click", function (params) {
+  curentItem++;
+  if (curentItem > reviews.length - 1) {
+    curentItem = 0;
   }
-
-  showPerson(currentItem);
+  usReviews(curentItem);
 });
 
-prewBtn.addEventListener("click", () => {
-  currentItem--;
-  if (currentItem < 0) {
-    currentItem = reviews.length - 1;
+ // кнопка передідущого елемента
+prewBtn.addEventListener("click", function (params) {
+  curentItem--;
+  if (curentItem < 0) {
+    curentItem = reviews.length - 1;
   }
-  showPerson(currentItem);
+  usReviews(curentItem);
 });
 
-randomBtn.addEventListener("click", () => {
-  currentItem = Math.floor(Math.random() * reviews.length);
-  showPerson(currentItem);
+// кнопка рандомного елемента
+randomBtn.addEventListener("click", function (params) {
+  curentItem = Math.floor(Math.random() * reviews.length);
+
+  usReviews(curentItem);
 });
