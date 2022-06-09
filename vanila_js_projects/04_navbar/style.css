@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 5px 14px -1px rgba(56, 56, 56, 0.17);
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+.logo_text {
+    text-shadow: 1px 3px 4px rgba(154, 150, 150, 1);
+}
+
+.logo_test_color {
+    color: hsl(205, 63%, 48%);
+}
+
+.nav_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav_lee {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav_header_links {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: hsl(209, 61%, 16%);
+    letter-spacing: 2px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.nav_header_links:hover {
+    color: hsl(205, 63%, 48%);
+    transition: 0.3s;
+}
+
+.social_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.social_li {
+    margin: 0 10px;
+    list-style: none;
+}
+
+.svg {
+    fill: hsl(205, 63%, 48%);
+}
+
+.svg:hover {
+    fill: hsl(205, 68%, 40%);
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: hsl(217, 37%, 93%);
+
+}

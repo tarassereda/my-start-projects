@@ -1,4 +1,4 @@
-/* const products = [
+const products = [
   {
     id: 0,
     name: "Ноутбук HP Pavilion Gaming 15-ec2013ua",
@@ -36,7 +36,7 @@ getData().forEach((item) => {
 function getData() {
   return products;
 }
- */
+
 
 
 const arr = ["hello", 4188, "Test", 99, "BMW"];
