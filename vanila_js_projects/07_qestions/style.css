@@ -14,7 +14,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(179, 190, 201, 0.5);
+    background-color: rgba(229, 234, 239, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -26,7 +27,7 @@ body {
     align-items: center;
     align-content: center;
     width: 50%;
-    background-color: rgb(84, 129, 132);
+    background-color: rgb(168, 163, 214);
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
@@ -38,10 +39,13 @@ body {
 }
 
 h1 {
-    margin: 0 auto;
-    font-size: 50px;
-    color: rgb(236, 162, 50);
-    margin-top: 20px;
+    font-size: 40px;
+    color: rgb(111, 97, 75);
+    width: 80%;
+    margin: 20px 0 20px 0;
+    text-align: center;
+
+
 }
 
 .que {
@@ -57,7 +61,7 @@ h1 {
     padding: 0 10px;
     width: 100%;
     min-height: 50px;
-    background-color: white;
+    background-color: rgb(230, 226, 226);
     margin-top: 20px;
     border-radius: 5px;
 }
@@ -72,7 +76,10 @@ h1 {
 
 }
 
-.q-1 {}
+.q-1 {
+    margin-right: 10px;
+    color: rgb(52, 54, 54);
+}
 
 .closed {
     /*     display: flex; */
@@ -98,8 +105,8 @@ h1 {
     align-items: center;
     justify-content: center;
     border-radius: 2px;
-    border: 1px solid rgb(55, 255, 0);
-    color: brown;
+    border: 1px solid rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
     width: 20px;
     height: 20px;
     cursor: pointer;
@@ -107,8 +114,8 @@ h1 {
 
 .plus:hover {
     transition: 0.2s linear;
-    background-color: rgb(209, 223, 13);
-    color: black;
+    background-color: rgb(223, 34, 13);
+    color: rgb(255, 255, 255);
 }
 
 
