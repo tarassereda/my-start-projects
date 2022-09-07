@@ -1,43 +1,18 @@
-const plus = document.querySelectorAll(".plus");
+const questions = document.querySelectorAll(".question");
 
-plus.forEach(function (btn) {
-    btn.addEventListener('click',function (event) {
-        document.querySelector(".que_vopros").classList.toggle("que_vopros_no_active");
-        document
-          .querySelector(".question_text")
-          .classList.toggle("question_text_active");
-        console.log("дія виконана");
-    } )
-    
-})
-;
+questions.forEach(function (question) {
+  const btn = question.querySelector(".question_btn");
+   console.log(btn);
 
+  btn.addEventListener("click", function () {
+     console.log(question);
 
+    questions.forEach(function (item) {
+      if (item !== question) {
+        item.classList.remove("show-text");
+      }
+    });
 
-/* const btns = document.querySelectorAll(".goods_btn");
-btns.forEach(function (btn) {
-  btn.addEventListener("click", function (event) {
-    btn.classList.toggle("goods_btn_active");
-    console.log(btn);
+    question.classList.toggle("show-text");
   });
-}); */
-
-/*   document.querySelectorAll('.plus').forEach(item => {
-    item.addEventListener('click', event => {
-        document
-        .querySelector(".que_vopros")
-        .classList.toggle("que_vopros_no_active");
-      document
-        .querySelector(".question_text")
-        .classList.toggle("question_text_active");
-      console.log("дія виконана");
-    })
-  }) */
-
-/*   document
-  .querySelector(".que_vopros")
-  .classList.toggle("que_vopros_no_active");
-document
-  .querySelector(".question_text")
-  .classList.toggle("question_text_active");
-console.log("дія виконана"); */
+});

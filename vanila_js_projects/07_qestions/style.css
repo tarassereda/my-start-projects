@@ -6,135 +6,117 @@
     box-sizing: border-box;
 }
 
-html {
+section {
     display: block;
+
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: rgba(229, 234, 239, 0.5);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
-.main {
-    margin: 0 auto;
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    width: 50%;
-    background-color: rgb(168, 163, 214);
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
-}
-
-.questions_main {
-
-    width: 80%;
-/*     height: 500px; */
-}
-
-h1 {
-    font-size: 40px;
-    color: rgb(111, 97, 75);
-    width: 80%;
-    margin: 20px 0 20px 0;
+.title {
+    margin-top: 15vh;
+    margin-bottom: 4rem;
     text-align: center;
+}
 
+h2 {
+    color: rgb(231, 82, 82);
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    color: rgb(70, 69, 69);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.section_center {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.question {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    background-color: rgb(230, 229, 229);
 
 }
 
-.que {
-
-}
-
-.que_vopros {
+.question_title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
-    padding: 0 10px;
-    width: 100%;
-    min-height: 50px;
-    background-color: rgb(230, 226, 226);
-    margin-top: 20px;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+
+}
+
+.question_btn {
+    /*     font-size: 1.5rem; */
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+
+}
+
+.plus-icon {
+    border: 2px solid rgb(222, 150, 63);
+    padding: 0 3px;
     border-radius: 5px;
 }
-
-.que:last-child{
-    margin-bottom: 50px;
-}
-
-.que_vopros_no_active{
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-
-}
-
-.q-1 {
-    margin-right: 10px;
-    color: rgb(52, 54, 54);
-}
-
-.closed {
-    /*     display: flex; */
-    display: none;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2px;
-    border: 1px solid rgb(55, 255, 0);
-    color: brown;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-
-.closed:hover {
-    transition: 0.2s linear;
-    background-color: rgb(209, 223, 13);
-    color: black;
+.plus-icon:hover{
+background-color: rgb(254, 255, 255);
 }
 
 .plus {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2px;
-    border: 1px solid rgb(255, 0, 0);
-    color: rgb(255, 0, 0);
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
+    color: rgb(222, 150, 63);
+    font-weight: bold;
+    font-size: 15px;
 }
 
-.plus:hover {
-    transition: 0.2s linear;
-    background-color: rgb(223, 34, 13);
-    color: rgb(255, 255, 255);
+.minus-icon {
+/*     display: none; */
+    border: 2px solid rgb(222, 150, 63);
+    padding: 0 3px;
+    border-radius: 5px;
 }
 
+.minus {
+/*     display: none; */
+    color: rgb(222, 150, 63);
+    font-weight: bold;
+    font-size: 15px;
+}
 
-.question_text {
-
+/* .question_text {
     display: none;
-    padding: 5px 10px;
-    background-color: white;
-    border-top: 1px solid rgb(152, 152, 152);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
 }
-.question_text_active{
-
+.question_text_active {
     display: block;
-}
+    height: 20px;
+} */
 
-.text {
 
-    color: rgb(97, 94, 94);
-    line-height: 1.5rem;
-}
+
+.question_text p {
+    padding: 10px 0;
+    color: rgb(45, 158, 219);
+  }
+  /* hide text */
+  .question_text {
+    display: none;
+  }
+  .show-text .question_text {
+    display: block;
+  }
+  .minus-icon {
+    display: none;
+  }
+  .show-text .minus_icon {
+    display: inline;
+  }
+  .show-text .plus_icon {
+    display: none;
+  }
