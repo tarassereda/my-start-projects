@@ -721,10 +721,9 @@ for (let elem = 0; elem < day.length; elem++) {
   employee7: 700,
 };
 let summ = 0;
-let a = 10;
 
 for (let elem in obj) {
-  summ = (obj[elem] / 100) * a;
+  summ = (obj[elem] / 100) * 10;
   obj[elem] = obj[elem] + summ;
 }
 console.log(obj); */
@@ -740,14 +739,87 @@ console.log(obj); */
 };
 
 let summ = 0;
-let a = 10;
 
 for (let elem in obj) {
   if (obj[elem] <= 400) {
-    summ = (obj[elem] / 100) * a;
+    summ = obj[elem] / 100 * 10;
     obj[elem] = obj[elem] + summ;
   }
 }
 console.log(obj); */
+
+/* let arr1 = [1, 2, 3, 4, 5];
+let arr2 = [6, 7, 8, 9, 10];
+let obj = {};
+let key;
+let value;
+for (let elem = 0; elem < arr1.length; elem++) {
+  key = arr1[elem];
+  value = arr2[elem];
+  obj[key] = value
+}
+console.log(obj); */
+
+/* let obj = { 1: 6, 2: 7, 3: 8, 4: 9, 5: 10 };
+let summKey = 0;
+let summValue = 0;
+let summ = 0;
+for (let elem in obj) {
+  summKey += +elem;
+  summValue += obj[elem];
+  summ = summKey / summValue;
+}
+console.log(summKey);
+console.log(summValue);
+console.log(summ); */
+
+/* let obj = { a: 1, b: 2, c: 3, d: 4, e: 5 };
+let arr1 = [];
+let arr2 = [];
+for (let elem in obj) {
+  arr1.push(elem);
+  arr2.push(obj[elem]);
+}
+console.log(arr1);
+console.log(arr2); */
+
+/* let obj = {
+  1: 125,
+  2: 225,
+  3: 128,
+  4: 356,
+  5: 145,
+  6: 281,
+  7: 452,
+};
+let arr = [];
+
+for (let elem in obj) {
+  let str = String(obj[elem]);
+
+  if (+str[0] === 1) {
+    arr.push(str);
+  } else if (+str[0] === 2) {
+    arr.push(str);
+  }
+}
+console.log(arr); */
+
+/* let arr = ["a", "b", "c", "d", "e"];
+let obj = {};
+for (let elem = 1; elem <= arr.length; elem++) {
+  obj[elem] = arr[elem -1];
+}
+console.log(obj); */
+
+/* let arr = ["a", "b", "c", "d", "e"];
+let obj = {};
+for (let elem = 1; elem <= arr.length; elem++) {
+  obj[arr[elem - 1] + " "] = elem;
+}
+console.log(obj); */
+
+
+
 
 
