@@ -548,7 +548,7 @@ for (let elem of arr) {
 } */
 
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+/* let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 let res = [];
 
 for (let elem of arr) {
@@ -557,7 +557,140 @@ for (let elem of arr) {
   }
 }
 
-console.log(res);
+console.log(res); */
 
 //Отработка циклов JavaScript
+
+/* for(let elem  = 1; elem <= 100; elem++){
+    console.log(elem);
+} */
+
+/* for(let elem  = 100; elem >= 1; elem--){
+    console.log(elem);
+} */
+
+/* for (let elem = 1; elem <= 100; elem++) {
+  if (elem % 2 == 0) {
+    console.log(elem);
+  }
+} */
+
+/* let arr = [];
+for (let elem = 0; elem < 10; elem++) {
+  arr[elem] = "x";
+}
+console.log(arr); */
+
+/* let arr = [];
+for (let elem = 1; elem <= 10; elem++) {
+  arr[elem] = elem;
+}
+console.log(arr); */
+
+/* let arr = [3, -4, 5, 7, 3, 11, 45];
+for (let elem of arr) {
+  if (elem > 0 && elem <= 10) {
+    console.log(elem);
+  }
+} */
+
+/* let arr = [3, -4, 5, 7, 3, 11, 45];
+for (let elem of arr) {
+  if (elem === 5) {
+    console.log("da");
+    break;
+  } else {
+    console.log("no");
+  }
+} */
+
+
+/* let arr = [1,2,3,4];
+let summ = 0;
+for(let elem of arr){
+    summ += elem;
+}
+console.log(summ); */
+
+/* let arr = [2, 3, 2];
+let summ = 0;
+for (let elem of arr) {
+  summ += elem ** 3;
+}
+console.log(summ);
+
+let a,b,c;
+ a = 27;
+ b = 16;
+ c = a + b;
+console.log(c);
+document.write(c) */
+
+/* let arr = [2, 2, 2, 2];
+let summ = 0;
+let sum2;
+for (let elem of arr) {
+  summ += elem;
+  sum2 = summ / elem;
+}
+console.log(sum2); */
+
+
+/* let arr = [1, 2, 3, 4, 5];
+let result = 1;
+let n = 4;
+for (let i = 1; i <= n; i++) {
+    console.log(n,i);
+  result = result * i;
+}
+console.log(result); */
+
+/* let arr = [];
+for(let elem = 10 ; elem >= 1 ;elem--){
+    arr[elem] = elem 
+}
+console.log(arr); */
+
+/* let arr = [2, 3, 8, 5];
+let summ = 0;
+for (let elem of arr) {
+  if (elem % 2 === 0) {
+    summ += elem;
+  }
+}
+console.log(summ); */
+
+
+/* let arr = [10, 20, 30, 50, 235, 3000];
+for (let elem of arr) {
+  let str = elem.toString();
+  if (+str[0] === 1) {
+    document.write(elem + "<br>");
+    console.log(elem);
+  } else if (+str[0] === 2) {
+    document.write(elem + "<br>");
+    console.log(elem);
+  } else if (+str[0] === 5) {
+    document.write(elem + "<br>");
+    console.log(elem);
+  }
+} */
+
+/* let arr = [10, 20, 30, 50, 235, 3000];
+let summ = [];
+for (let elem = arr.length -1; elem >= 0; elem--) {
+  let res = arr[elem];
+  summ.push(res);
+}
+console.log(summ); */
+
+/* let arr = [0, 1, 4, 3, 5];
+for (let elem of arr) {
+  if (elem === arr[elem]) {
+    console.log(elem);
+  }
+} */
+
+
+
 
