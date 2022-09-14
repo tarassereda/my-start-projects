@@ -691,6 +691,63 @@ for (let elem of arr) {
   }
 } */
 
+/* let arr = [1,2,3,4,5];
+for(let elem of arr){
+  document.write(elem + '<br>')
+} */
 
+
+/* let dayNow = 2;
+let day = ["пн", "вт", "ср", "чт", "пт", "сб", "нд"];
+for (let elem = 0; elem < day.length; elem++) {
+  console.log(elem);
+  document.body.style.fontSize = "50px";
+  document.body.style.color = "red";
+  document.body.style.backgroundColor = "yellow";
+  if (elem != dayNow) {
+    document.write(day[elem] + " ");
+  } else if (elem == dayNow) {
+    document.write("<i> " + day[elem] + "</i>" + " ");
+  }
+} */
+
+/* let obj = {
+  employee1: 100,
+  employee2: 200,
+  employee3: 300,
+  employee4: 400,
+  employee5: 500,
+  employee6: 600,
+  employee7: 700,
+};
+let summ = 0;
+let a = 10;
+
+for (let elem in obj) {
+  summ = (obj[elem] / 100) * a;
+  obj[elem] = obj[elem] + summ;
+}
+console.log(obj); */
+
+/* let obj = {
+  employee1: 100,
+  employee2: 200,
+  employee3: 300,
+  employee4: 400,
+  employee5: 500,
+  employee6: 600,
+  employee7: 700,
+};
+
+let summ = 0;
+let a = 10;
+
+for (let elem in obj) {
+  if (obj[elem] <= 400) {
+    summ = (obj[elem] / 100) * a;
+    obj[elem] = obj[elem] + summ;
+  }
+}
+console.log(obj); */
 
 
