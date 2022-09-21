@@ -116,6 +116,110 @@ arr.push(4,5,6);
 console.log(arr); */
 
 
-let arr = [1,2,3];
+/* let arr = [1,2,3];
 arr.unshift(4,5,6)
-console.log(arr);
+console.log(arr); */
+
+
+/* let arr = [1, 2, 3, 4, 5];
+let sum = arr.slice(0,3)
+console.log(sum); */
+
+/* let arr = [1, 2, 3, 4, 5];
+let sum = arr.slice(3,5)
+console.log(sum); */
+
+
+/* let arr = [1, 2, 3, 4, 5];
+let summ = arr.indexOf(3)
+console.log(summ); */
+
+
+/* let arr = [1, 2, 3, 4, 5];
+let summ = arr.includes(3)
+console.log(summ); */
+
+//Практика на использования изученных методов Регистр символов
+
+/* let str = "london";
+let str2 = str.substring(0, str.length - 1);
+let result = str.slice(5, 6).toUpperCase();
+str2 += result;
+console.log(str2);
+
+console.log(result); */
+
+/* let str = "london";
+let str2 = str.charAt(0).toUpperCase() + str.charAt(1).toUpperCase() 
+let str3 = str.slice(2,6)
+let result = str2 + str3
+console.log(str2);
+console.log(str3);
+console.log(result); */
+
+/* let str = "London";
+let str2 = str.slice(0,1).toLowerCase() + str.slice(1)
+console.log(str2); */
+
+/* let str = "word1 word2 word3";
+let word = str.split(" ");
+console.log(word);
+for (let elem = 0; elem < word.length; elem++) {
+  word[elem] = word[elem].slice(0, 1).toUpperCase() + word[elem].slice(1);
+  console.log(word[elem]);
+}
+let res = word.join(" ");
+console.log(res); */
+
+/* let str = "var_test_text";
+let slova = str.split("_");
+for (let i = 0; i < slova.length; i++) {
+  slova[i] = slova[i].slice(0, 1).toUpperCase() + slova[i].slice(1);
+  console.log(slova[i]);
+}
+let result = slova.join("");
+console.log(result); */
+
+/* let str = "var_test_text";
+let slova = str.split("_");
+for (let i = 0; i < slova.length; i++) {
+  slova[i] = slova[i].slice(0, 1).toUpperCase() + slova[i].slice(1);
+}
+let result = slova.join("");
+let str3 = result.slice(0,1).toLowerCase() + result.slice(1)
+console.log(str3); */
+
+/* let str = "abcd";
+let res = str.split("").reverse().join("");
+console.log(res); */
+
+/* let num = 12345;
+let arr = String(num).split('')
+let sum = 0;
+for (let digit of arr) {
+  sum += +digit;
+}
+
+console.log(sum); */
+
+/* let num = 12345;
+let arr = String(num).split('');
+
+let sum = 0;
+for (let digit of arr) {
+	sum += Number(digit);
+}
+
+console.log(sum); */
+
+
+/* let num = 12345;
+let arr = String(num).split("");
+
+let prod = 0;
+for (let digit of arr) {
+  console.log(digit);
+  prod = Number(digit) * Number(digit);
+}
+
+console.log(prod); */
