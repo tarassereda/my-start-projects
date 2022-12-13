@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 3</title>
+  </head>
+  <style>
+    #block {
+      width: 300px;
+      height: 200px;
+      background-color: blueviolet;
+      margin-left: 100px;
+      margin-top: 50px;
+    }
+  </style>
+  <body>
+    <h1>Lesson 3</h1>
+    <hr />
+    <div class="block1">
+      <p>
+        Верхній правий кут
+        <input
+          type="range"
+          value="0"
+          id="i1"
+          min="0"
+          max="100"
+          oninput="fun1()"
+        />
+        <input type="text" id="text1" value="0" />
+      </p>
+
+      <p>
+        Верхній лівий кут
+        <input
+          type="range"
+          value="0"
+          id="i2"
+          min="0"
+          max="100"
+          oninput="fun1()"
+        />
+        <input type="text" id="text2" value="0" />
+      </p>
+
+      <p>
+        Нижній правий кут
+        <input
+          type="range"
+          value="0"
+          id="i3"
+          min="0"
+          max="100"
+          oninput="fun1()"
+        />
+        <input type="text" id="text3" value="0" />
+      </p>
+
+      <p>
+        Нижній лівий кут
+        <input
+          type="range"
+          value="0"
+          id="i4"
+          min="0"
+          max="100"
+          oninput="fun1()"
+        />
+        <input type="text" id="text4" value="0" />
+      </p>
+    </div>
+    <hr />
+    <div id="block"></div>
+
+    <script>
+      function fun1() {
+        let rtr = document.getElementById("i1").value;
+        let rtl = document.getElementById("i2").value;
+        let rbr = document.getElementById("i3").value;
+        let rbl = document.getElementById("i4").value;
+
+        let ttr = document.getElementById("text1");
+        let ttl = document.getElementById("text2");
+        let tbr = document.getElementById("text3");
+        let tbl = document.getElementById("text4");
+
+        let block = document.getElementById("block");
+
+        ttr.value = rtr;
+        ttl.value = rtl;
+        tbr.value = rbr;
+        tbl.value = rbl;
+
+        block.style.borderRadius =
+          rtr + "px " + rtl + "px " + rbr + "px " + rbl + "px ";
+      }
+    </script>
+  </body>
+</html>

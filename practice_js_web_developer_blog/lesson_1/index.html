@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 1</title>
+  </head>
+  <body>
+    <h1>Lesson 1</h1>
+    <label>
+      <input type="checkbox" name="checkbox" id="one" onchange="fun1()" />
+      Приклад чекбокс
+    </label>
+    <br />
+    <input type="radio" name="rad" value="11" /> 1
+    <input type="radio" name="rad" value="22" /> 2
+    <input type="radio" name="rad" value="33" /> 3
+    <button onclick="fun2()">Перевірити який з елементів вибраний</button>
+
+    <script>
+      // задача 1
+      function fun1() {
+        let check = document.getElementById("one");
+        if (check.checked) {
+          alert("включений");
+        } else {
+          alert("виключений");
+        }
+      }
+
+      // задача 2
+      function fun2() {
+        let che = document.getElementsByName("rad");
+        for (let i = 0; i < che.length; i++) {
+          if (che[i].checked) {
+            alert(
+              "вибраний " + i + " значення його " + che[i].value + " елемент"
+            );
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
