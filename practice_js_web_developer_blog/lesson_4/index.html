@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 4</title>
+  </head>
+  <style>
+    h1 {
+      color: blueviolet;
+      margin-left: 50px;
+    }
+    .menu-item {
+      display: inline-block;
+      position: relative;
+      border: 2px solid red;
+      color: brown;
+      width: 100px;
+      height: 20px;
+      cursor: pointer;
+    }
+    .menu-item .submenu {
+      display: inline-block;
+      width: 100px;
+      margin-top: 5px;
+      position: absolute;
+      cursor: pointer;
+      background-color: rgb(198, 198, 198);
+      /* border: 2px solid red; */
+    }
+  </style>
+  <body>
+    <h1>Lesson 4</h1>
+    <hr />
+    <div id="nav">
+      <div class="menu-item">
+        Меню 1
+        <div class="submenu">Підменю 1</div>
+      </div>
+      <div class="menu-item">
+        Меню 2
+        <div class="submenu">Підменю 2</div>
+      </div>
+      <div class="menu-item">
+        Меню 3
+        <div class="submenu">Підменю 3</div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("nav").onmouseover = function (event) {
+        let target = event.target;
+        if (target.className == "menu-item") {
+          let s = target.getElementsByClassName("submenu");
+          clouseMenu();
+          s[0].style.display = "block";
+        }
+      };
+
+      document.onmouseover = function (event) {
+        let target = event.target;
+        console.log(event.target);
+        if (
+          target.className !== "menu-item" &&
+          target.className !== "submenu"
+        ) {
+          clouseMenu();
+        }
+      };
+
+      function clouseMenu() {
+        let menu = document.getElementById("nav");
+        let sub = document.getElementsByClassName("submenu");
+        for (let i = 0; i < sub.length; i++) {
+          sub[i].style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
